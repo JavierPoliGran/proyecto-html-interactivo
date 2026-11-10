@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lección 1: Fundamentos de HTML - HTML Interactivo</title>
+    <!-- Vinculación con tu archivo CSS -->
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <!-- Barra de Navegación -->
+    <header>
+        <div class="nav-container">
+            <a href="index.html" class="logo">🚀 HTML Interactivo</a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Lección 1</a></li>
+                <li><a href="editor.html">Editor en Vivo</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Contenido Principal: Lección Extendida -->
+    <main class="container">
+        
+        <!-- Tarjeta de Registro Mínimo -->
+        <section class="card">
+            <h2>¡Bienvenido a tu viaje como Desarrollador Web!</h2>
+            <p>Personaliza tu experiencia ingresando tu nombre para guardar tus avances de aprendizaje:</p>
+            <form id="registro-form">
+                <div style="display: flex; gap: 1rem; flex-wrap: wrap; align-items: center; margin-top: 0.75rem;">
+                    <input type="text" id="nombre" required placeholder="Tu nombre aquí..." style="padding: 0.75rem; flex: 1; min-width: 250px; border: 1px solid var(--border-color); border-radius: 0.5rem; font-size: 1rem;">
+                    <button type="submit" class="btn">Guardar Progreso</button>
+                </div>
+            </form>
+            <div id="saludo-usuario" style="margin-top: 1rem; font-weight: bold; color: var(--primary-color);"></div>
+        </section>
+
+        <!-- Tarjeta de Teoría Extendida: Lección 1 -->
+        <section class="card">
+            <h2>Lección 1: Anatomía y Fundamentos de HTML</h2>
+            <p><strong>HTML</strong> (<em>HyperText Markup Language</em> o Lenguaje de Marcado de Hipertexto) no es un lenguaje de programación tradicional, sino un <strong>lenguaje de marcado</strong> que le indica a los navegadores cómo estructurar y mostrar los elementos de una página web.</p>
+            
+            <h3>1. ¿Cómo se componen las etiquetas?</h3>
+            <p>La gran mayoría de los elementos en HTML constan de una <strong>etiqueta de apertura</strong>, un contenido y una <strong>etiqueta de cierre</strong>:</p>
+            
+            <ul class="lesson-list">
+                <li><code>&lt;h1&gt;Texto&lt;/h1&gt;</code>: Define un encabezado principal (título grande).</li>
+                <li><code>&lt;p&gt;Texto&lt;/p&gt;</code>: Define un párrafo de texto normal.</li>
+                <li><code>&lt;strong&gt;Texto&lt;/strong&gt;</code>: Aplica negrita y resalta texto importante.</li>
+            </ul>
+
+            <h3>2. Estructura esquelética de un documento HTML</h3>
+            <p>Todo archivo HTML moderno debe contener una jerarquía estándar para que el navegador lo interprete correctamente:</p>
+            
+            <pre style="background-color: var(--code-bg); color: #38bdf8; padding: 1.25rem; border-radius: 0.5rem; overflow-x: auto; font-family: monospace; font-size: 0.9rem; margin-bottom: 1.5rem; line-height: 1.5;">
+&lt;!DOCTYPE html&gt; &lt;!-- Define que es un documento HTML5 --&gt;
+&lt;html lang="es"&gt;
+  &lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Título de la pestaña&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;¡Hola Mundo!&lt;/h1&gt;
+    &lt;p&gt;Este es mi primer párrafo en la web.&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</pre>
+
+            <div class="feedback-box">
+                💡 <strong>Regla de oro:</strong> Nunca olvides cerrar tus etiquetas. Si abres un contenedor con <code>&lt;div&gt;</code>, asegúrate de cerrarlo más adelante con <code>&lt;/div&gt;</code> para evitar que el diseño de tu página web colapse.
+            </div>
+
+            <div style="margin-top: 2.5rem; display: flex; justify-content: flex-end;">
+                <a href="editor.html" class="btn">Probar Código en el Editor &rarr;</a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <p style="text-align: center; padding: 2rem 0; color: #6b7280; font-size: 0.9rem;">&copy; 2026 Plataforma Educativa HTML - MVP Interactivo</p>
+    </footer>
+
+    <!-- Archivo JavaScript -->
+    <script src="js/funciones.js"></script>
+</body>
+</html>
